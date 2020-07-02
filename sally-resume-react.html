@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name= "description" content="This is Sally Student's Resume Website.">
+    <title>Sally Student Resume React Practice</title>
+  </head>
+  <body> 
+  <div id = "sallyResume"> </div>
+ 
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script type="text/babel">
+  // Nested elements inside the App
+ReactDOM.render(
+  <div>
+ <section>
+ <header>
+<h1> Sally Student Resume 2020 </h1>
+  </header> 
+  <img src= "https://cdn0.scrvt.com/8b7b5f6328a4ae611f2a8b95cfbba390/cb78913dd8c333da/52bb368dc0f4/v/5a7c49095e22/Budgeting-to-repay-your-student-loan.jpg" alt="Sally's profile picture: A woman holding a phone and a cup of coffee." title="Photo of Sally"></img>
+  </section>
+ 
+<section>
+  <h2> Contact Information </h2>
+    <address>
+      <p>Email: <a href="mailto:sally@googlemail.com">sally@googlemail.com</a></p>
+      <p>Phone: <a href="tel:11237777777"> (123)777-7777</a> </p>
+    </address>  
+    </section>
+    <section>
+    <h2> Professional Experience</h2>
+    <h3> Google</h3>
+    <em>June 2019 to  August 2019</em>
+   <p>Web Development Intern</p>
+   <p>Worked on Google's YouTube Platform. Focused on search and discovery.</p>
+
+    <h3> Github</h3>
+     <em>June 2018to  August 2018</em>
+   <p>Product Design Intern</p>
+   <p>Supported product designers. Helped perform usability studies on the platform.</p>
+</section>
+<section>
+    <h2> Education</h2>
+    <ul>
+   <li> UCLA Bachelor of Science Engineering May 2020 <em> expected</em> </li>
+   <li> Hawkins High School June 2015 </li>
+   </ul>
+   </section>
+  </div>,
+  document.querySelector('#sallyResume')
+);
+</script>
+</body>
+</html>
